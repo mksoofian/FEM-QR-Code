@@ -12,6 +12,19 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | QR code component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,7 +39,7 @@
         font-family: "Open Sans", sans-serif;
       }
       body {
-        background-color: rgb(178, 189, 201);
+        background-color: hsl(212, 45%, 89%);
       }
       .card {
         position: absolute;
@@ -46,15 +59,21 @@
       .text {
         border-radius: 10px;
       }
-      .text h2 {
-        line-height: 2.5ch;
+      .bold {
+        /* line-height: 2.5ch; */
         padding: 18px;
         font-size: 3ch;
+        font-family: "Outfit", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
       }
-      .text p {
-        line-height: 2.5ch;
+      .subtext {
+        /* line-height: 2.5ch; */
         color: gray;
         font-size: 2ch;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
       }
     </style>
   </head>
@@ -65,11 +84,11 @@
         alt="QR Code"
       />
       <div class="text">
-        <h2>
+        <p class="bold">
           Improve your front-end <br />
           skills by building projects
-        </h2>
-        <p>
+        </p>
+        <p class="subtext">
           Scan the QR code to visit Frontend <br />Mentor and take your coding
           skills to <br />
           the next level
