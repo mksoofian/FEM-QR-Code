@@ -46,7 +46,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color:hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 100%);
         padding: 15px;
         width: 250px;
         height: 400px;
@@ -54,35 +54,34 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+        /* Black shadow with 10px blur */
+        filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.13));
       }
       .card img,
       .text {
         border-radius: 10px;
       }
       .bold {
-        /* line-height: 2.5ch; */
         padding: 18px;
         font-size: 3ch;
         font-family: "Outfit", sans-serif;
         font-weight: 700;
         font-size: 18px;
+        color: hsl(218, 44%, 22%);
       }
       .subtext {
-        /* line-height: 2.5ch; */
         color: gray;
         font-size: 2ch;
         font-family: "Outfit", sans-serif;
         font-weight: 400;
         font-size: 15px;
+        color: hsl(220, 15%, 55%);
       }
     </style>
   </head>
   <body>
     <div class="card">
-      <img
-        src="images/image-qr-code.png"
-        alt="QR Code"
-      />
+      <img src="images/image-qr-code.png" alt="QR Code" />
       <div class="text">
         <p class="bold">
           Improve your front-end <br />
